@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                background: #333;
+                color: #fff;
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            canvas {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+            #controls {
+                position: absolute;
+                left: 24px;
+                top: 24px;
+            }
+            label {
+                display: block;
+                font-weight: bold;
+            }
+            input {
+                background: none;
+                border: 2px solid #fff;
+                color: #fff;
+                display: block;
+                margin-bottom: 6px;
+                padding: 6px 10px;
+            }
+            button {
+                background: none;
+                border: 2px solid #fff;
+                color: #fff;
+                display: block;
+                font-weight: bold;
+                margin-top: 12px;
+                padding: 8px 12px;
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="lib/three.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/geom.js"></script>
+    <script type="text/javascript" src="js/swarm.js"></script>
+    <script type="text/javascript" src="js/interface.js"></script>
+    <div id="controls">
+        <h2>WebGL Boids</h2>
+        <label for="inputSwarmSize">
+            Swarm Size<br>
+            <input id="inputSwarmSize" type="text">
+        </label>
+        <label for="inputSeparation">
+            Separation<br>
+            <input id="inputSeparation" type="text">
+        </label>
+        <label for="inputAlignment">
+            Alignment<br>
+            <input id="inputAlignment" type="text">
+        </label>
+        <label for="inputCommunitySize">
+            Community Size<br>
+            <input id="inputCommunitySize" type="text">
+        </label>
+        <label for="inputCohesion">
+            Cohesion<br>
+            <input id="inputCohesion" type="text">
+        </label>
+        <label for="inputVisibility">
+            Visibility<br>
+            <input id="inputVisibility" type="text">
+        </label>
+        <button id="buttonStart">Start</button>
+    </div>
+</html>
